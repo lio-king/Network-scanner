@@ -12,6 +12,18 @@ pip install sqlite3
 
 
 # Usage :
-this cmd will scan range of IP addresses and also provides some other features  like ports, cve detections and and etc.
+## This cmd will scan range of IP addresses and also provides some other features  like ports, cve detections and and etc.
 
 python3 NETSCAN.py -t 192.168.0.1/24
+
+# To check Database 
+
+## Go to the cli 
+sqlite3 scan_results.db
+
+## Check availabile tales
+.tables
+
+## Query Data
+SELECT * FROM scan_results;
+
